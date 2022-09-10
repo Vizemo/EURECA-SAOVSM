@@ -1,2 +1,2 @@
 # EURECA-SAOV
-EURECA project sentiment analysis over vaccines (SAOV)
+EURECA project Sentiment Analysis Over Vaccines (SAOV)
