@@ -1,5 +1,4 @@
 import json
-import zstd
 import zstandard
 from zstandard import ZstdDecompressor
 
