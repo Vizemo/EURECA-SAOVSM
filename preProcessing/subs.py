@@ -1,9 +1,8 @@
 import json
-import zstd
 import zstandard
 from zstandard import ZstdDecompressor
 
-with open("RC_2020-03.zst", 'rb') as fh:
+with open("RC_2020-01.zst", 'rb') as fh:
     dctx = zstandard.ZstdDecompressor(max_window_size=2147483648)
     
     #Create the output file to write the comments, scores, and subreddits to
