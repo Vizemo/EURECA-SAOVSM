@@ -14,10 +14,10 @@ with pd.read_json("2020-01.txt", lines=True, chunksize = 1000) as f:
     for chunk in f:
 
         #Iterate through each row in 1,000 row chunks
-        for index, row in chunk.iterrows():
+        for row in chunk.itertuples():
 
             #Split comments into words (delimite by white space)
-            temp_comment = row['comment'].split(' ')
+            temp_comment = row.comment.split(' ')
             
             #Use a flag to only write each comment once, even if it says "vaccine" multiple times 
             flag = True
@@ -33,27 +33,27 @@ with pd.read_json("2020-01.txt", lines=True, chunksize = 1000) as f:
                     
                     #If we find a key term match, store the row into a JSON and write to output file
                     if word == "vaccine" or word == "vacine" or word == "vaccines":
-                        temp_row['comment']   = row['comment']
-                        temp_row['score']     = row['score']
-                        temp_row['subreddit'] = row['subreddit']
+                        temp_row['comment']   = row.comment
+                        temp_row['score']     = row.score
+                        temp_row['subreddit'] = row.subreddit
                         f1.write(json.dumps(temp_row))
                         f1.write('\n')
                         flag = False
                     
-                    elif word == "vaccination" or word == "vaccinations":
-                        temp_row['comment']   = row['comment']
-                        temp_row['score']     = row['score']
-                        temp_row['subreddit'] = row['subreddit']
+                    elif word == "vaccination" or word == "vaccinations" or word == "vaccinated":
+                        temp_row['comment']   = row.comment
+                        temp_row['score']     = row.score
+                        temp_row['subreddit'] = row.subreddit
                         f1.write(json.dumps(temp_row))
                         f1.write('\n')
                         flag = False
                     
-                    elif word == "vax" or word == "vaxx":
-                        temp_row['comment']   = row['comment']
-                        temp_row['score']     = row['score']
-                        temp_row['subreddit'] = row['subreddit']
+                    elif word == "vax" or word == "vaxx" or word == "vaxxed":
+                        temp_row['comment']   = row.comment
+                        temp_row['score']     = row.score
+                        temp_row['subreddit'] = row.subreddit
                         f2.write(json.dumps(temp_row))
                         f2.write('\n')
                         flag = False
 
-            print(index)
+            print(row.Index)
