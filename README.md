@@ -2,6 +2,7 @@
 EURECA Project: Sentiment Analysis Over Vaccines On Social Media (SAOVOSM)
 
 Abstract
+
 Purpose: We performed a sentiment analysis on social media comments that contained relevant key terms about vaccines. We looked for patterns in vaccine sentiment over time, especially during the COVID-19 pandemic, and represented this data by community.
 
 Methodology: The social media platform we used for input data was Reddit, an anonymous online forum. We processed over 2 billion comments, the entirety of all text statements posted on Reddit in 2020. We discarded all posts that did not contain relevant key terms (“vaccine,” “vaccinated,” “vaccination,” “vax,” and their variations) and retained 1.6 million comments. We then used a natural language processing tool, VADER, to perform a sentiment analysis on each month and recorded the percentage of positive, neutral, and negative comments over time. Additionally, we recorded the compound score to show the degree of positivity/negativity. Finally, we filtered comments by subreddit and compared the vaccine sentiment for different demographics.  
