@@ -1,6 +1,15 @@
 # EURECA-SAOV
 EURECA Project: Sentiment Analysis Over Vaccines On Social Media (SAOVOSM)
 
+Each folder contains the code that was written to complete the project
+
+preProcessing - contains code to decompress the zStandard files and save the decompressed data into
+the filtered JSON format.
+sentiment_analysis - contains code that we used NLP VADER library to analyze the processed data.
+subreddits - contains partial data of all the subreddits on reddit and a counter based on revelant data for
+presentation purposes for a poster presentation.
+
+
 Abstract
 
 Purpose: We performed a sentiment analysis on social media comments that contained relevant key terms about vaccines. We looked for patterns in vaccine sentiment over time, especially during the COVID-19 pandemic, and represented this data by community.
