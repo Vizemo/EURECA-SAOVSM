@@ -1,5 +1,4 @@
-## EURECA-SAOV
-## EURECA Project: Sentiment Analysis Over Vaccines On Social Media (SAOVOSM)
+## EURECA-SAOVSM Project: Sentiment Analysis Over Vaccines On Social Media (SAOVSM)
 
 #### Each folder contains the code that was written to complete the project
 
