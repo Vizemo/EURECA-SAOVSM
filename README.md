@@ -2,11 +2,12 @@
 
 ## Each folder contains the code that was written to complete the project
 
-#### [preProcessing](./preProcessing) - contains code to decompress the zStandard files and save the decompressed data into
-the filtered JSON format.
-#### [sentiment_analysis](./sentiment_analysis) - contains code that we used NLP VADER library to analyze the processed data.
-#### [subreddits](./subreddits) - contains partial data of all the subreddits on reddit and a counter based on revelant data for
-presentation purposes for a poster presentation.
+### [preProcessing](./preProcessing) 
+- contains code to decompress the zStandard files and save the decompressed data into the filtered JSON format.
+### [sentiment_analysis](./sentiment_analysis) 
+- contains code that we used NLP VADER library to analyze the processed data.
+### [subreddits](./subreddits) 
+- contains partial data of all the subreddits on reddit and a counter based on revelant data for presentation purposes for a poster presentation.
 
 
 ## Abstract
